@@ -63,7 +63,7 @@ Status: Accepted
 Runtime: 4 ms
 Memory Usage: 3.1 MB
 
-## Squares of a Sorted Arra
+## Squares of a Sorted Array
 Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 
 Example 1:
