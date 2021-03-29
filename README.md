@@ -87,5 +87,12 @@ nums is sorted in non-decreasing order.
 
 Follow up: Squaring each element and sorting the new array is very trivial, could you find an O(n) solution using a different approach?
 
+
+Submission Detail
+137 / 137 test cases passed.
+Status: Accepted
+Runtime: 156 ms
+Memory Usage: 6.6 MB
+
 ## Running coverage test
 go test -v -cover

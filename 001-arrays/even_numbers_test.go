@@ -1,14 +1,9 @@
 package main
 
-import "testing"
-
-func makeRange(min, max int) []int {
-	a := make([]int, max-min+1)
-	for i := range a {
-		a[i] = min + i
-	}
-	return a
-}
+import (
+	"leetcode/001-arrays/utils"
+	"testing"
+)
 
 func TestFind1EvenNumberDigitsInList(t *testing.T) {
 	binaryList := []int{555, 901, 482, 1771}
@@ -54,7 +49,7 @@ func TestErrorToFindEvenNumbersDigitsInList2(t *testing.T) {
 
 func TestErrorToFindEvenNumbersDigitsInList3(t *testing.T) {
 
-	got, errorObj := FindNumbers(makeRange(1, 501))
+	got, errorObj := FindNumbers(utils.MakeRange(1, 501))
 
 	if errorObj == nil {
 		t.Errorf("Invalid array range Error was expected. Got %d", got)

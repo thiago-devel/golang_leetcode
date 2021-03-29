@@ -1,14 +1,9 @@
 package main
 
-import "testing"
-
-func makeRangeFaced(min, max int) []int {
-	a := make([]int, max-min+1)
-	for i := range a {
-		a[i] = min + i
-	}
-	return a
-}
+import (
+	"leetcode/001-arrays/utils"
+	"testing"
+)
 
 func TestFind1EvenNumberDigitsInListFaced(t *testing.T) {
 	binaryList := []int{555, 901, 482, 1771}
@@ -57,7 +52,7 @@ func TestErrorToFindEvenNumbersDigitsInListForced2(t *testing.T) {
 func TestErrorToFindEvenNumbersDigitsInListForced3(t *testing.T) {
 	var want int = 1
 
-	got := FindNumbersForced(makeRange(501, 1002))
+	got := FindNumbersForced(utils.MakeRange(501, 1002))
 
 	if got != want {
 		t.Errorf("got %d, wanted %d", got, want)
