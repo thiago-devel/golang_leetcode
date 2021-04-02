@@ -91,8 +91,8 @@ Follow up: Squaring each element and sorting the new array is very trivial, coul
 Submission Detail
 137 / 137 test cases passed.
 Status: Accepted
-Runtime: 156 ms
-Memory Usage: 6.6 MB
+Runtime: 28 ms
+Memory Usage: 6.5 MB
 
 ## Running coverage test
 go test -v -cover
